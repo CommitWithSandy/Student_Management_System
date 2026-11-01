@@ -1,0 +1,13 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Enterprise Student Management System - Unified Full-Stack Application",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && mvnw.cmd spring-boot:run",
+    "build": "cd frontend && npm run build && cd ../backend && mvnw.cmd package",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && mvnw.cmd package -DskipFrontend",
+    "dev": "cd backend && mvnw.cmd spring-boot:run"
+  }
+}
